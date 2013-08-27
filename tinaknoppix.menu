@@ -1,0 +1,13 @@
+MENU BEGIN TINAKNOPPIX
+MENU LABEL ^Tina Knoppix 3.1.0
+# ------====> Include Menu Settings <====------
+MENU INCLUDE er/menuinc/header.module
+
+# ------====> Set Specific Page Settings <====------
+MENU BACKGROUND er/plugins/tinaknoppix/tinaknoppix.png
+
+MENU INCLUDE er/plugins/tinaknoppix/tinaknoppixmain.menu
+
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END

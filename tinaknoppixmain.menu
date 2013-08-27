@@ -1,0 +1,29 @@
+LABEL TINAKNOPPIXSTD
+MENU LABEL ^Tina Knoppix
+KERNEL er/plugins/tinaknoppix/linux
+INITRD er/plugins/tinaknoppix/miniroot.gz
+APPEND nfsdir=10.0.0.1:/tftpboot/er/shares/tinaknoppix nodhcp lang=us ramdisk_size=100000 init=/etc/init apm=power-off nomce noapic dma vga=773 lang=en libata.force=noncq hpsa.hpsa_allow_any=1 BOOT_IMAGE=knoppix vt.default_utf8=0 video=vga16fb:off loglevel=1 tz=localtime
+
+LABEL TINAKNOPPIXFB1280X1024
+MENU LABEL ^Tina Knoppix 1280x1024
+KERNEL er/plugins/tinaknoppix/linux
+INITRD er/plugins/tinaknoppix/miniroot.gz
+APPEND nfsdir=10.0.0.1:/tftpboot/er/shares/tinaknoppix nodhcp lang=us ramdisk_size=100000 init=/etc/init apm=power-off nomce noapic dma vga=773 lang=en libata.force=noncq hpsa.hpsa_allow_any=1 BOOT_IMAGE=knoppix vt.default_utf8=0 video=vga16fb:off loglevel=1 tz=localtime video=1280x1024 xmodule=fbdev
+
+LABEL TINAKNOPPIXFB1024X768
+MENU LABEL ^Tina Knoppix 1024x768
+KERNEL er/plugins/tinaknoppix/linux
+INITRD er/plugins/tinaknoppix/miniroot.gz
+APPEND nfsdir=10.0.0.1:/tftpboot/er/shares/tinaknoppix nodhcp lang=us ramdisk_size=100000 init=/etc/init apm=power-off nomce noapic dma vga=773 lang=en libata.force=noncq hpsa.hpsa_allow_any=1 BOOT_IMAGE=knoppix vt.default_utf8=0 video=vga16fb:off loglevel=1 tz=localtime video=1024x768 xmodule=fbdev
+
+LABEL TINAKNOPPIXFB800X600
+MENU LABEL ^Tina Knoppix 800x600
+KERNEL er/plugins/tinaknoppix/linux
+INITRD er/plugins/tinaknoppix/miniroot.gz
+APPEND nfsdir=10.0.0.1:/tftpboot/er/shares/tinaknoppix nodhcp lang=us ramdisk_size=100000 init=/etc/init apm=power-off nomce noapic dma vga=773 lang=en libata.force=noncq hpsa.hpsa_allow_any=1 BOOT_IMAGE=knoppix vt.default_utf8=0 video=vga16fb:off loglevel=1 tz=localtime video=800x600 xmodule=fbdev
+
+LABEL TINAKNOPPIXDBG
+MENU LABEL ^Tina Knoppix Debug
+KERNEL er/plugins/tinaknoppix/linux
+INITRD er/plugins/tinaknoppix/miniroot.gz
+APPEND nfsdir=10.0.0.1:/tftpboot/er/shares/tinaknoppix nodhcp lang=us ramdisk_size=100000 init=/etc/init apm=power-off nomce noapic dma vga=773 lang=en libata.force=noncq hpsa.hpsa_allow_any=1 BOOT_IMAGE=knoppix vt.default_utf8=0 video=vga16fb:off loglevel=1 tz=localtime debug

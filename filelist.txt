@@ -1,0 +1,7 @@
+.:
+filelist.txt
+linux
+miniroot.gz
+tinaknoppixmain.menu
+tinaknoppix.menu
+tinaknoppix.png
